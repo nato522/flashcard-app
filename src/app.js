@@ -1,59 +1,9 @@
+import { addDeck, showAddDeck, hideAddDeck } from './actions';
+import * as reducers from './reducers';
+
 const ENTER_KEY = 13;
 
-const addDeck = name => ({
-	type: 'ADD_DECK',
-	data: name
-});
-
-const showAddDeck = () => ({
-	type: 'SHOW_ADD_DECK'
-});
-
-const hideAddDeck = () => ({
-	type: 'HIDE_ADD_DECK'
-});
-
-const cards = (state, action) => {
-	switch (action.type) {
-		case 'ADD_CARD':
-			let newCard = Object.assign({}, action.data, {
-				score: 1,
-				id: +new Date(),
-			});
-
-			return state.concat([newCard]);
-		default:
-			return state || [];
-	}
-};
-
-const decks = (state, action) => {
-	switch (action.type){
-		case 'ADD_DECK':
-			let newDeck= {
-				name: action.data,
-				id: +new Date()
-			};
-		
-			return state.concat([newDeck]);
-		default:
-			return state || [];
-	}
-};
-
-const addingDeck = (state, action) => {
-	switch (action.type){
-		case 'SHOW_ADD_DECK': return true;
-		case 'HIDE_ADD_DECK': return false;
-		default: return !!state; // double negative --> if it's true returns true; if it's false or undefined returns false
-	}
-};
-
-const store = Redux.createStore(Redux.combineReducers({
-	cards,
-	decks,
-	addingDeck
-}));
+const store = Redux.createStore(Redux.combineReducers(reducers));
 
 store.subscribe(() => {
 	console.log(store.getState());
@@ -68,6 +18,12 @@ const App = (props) => {
 }
 
 class Sidebar extends React.Component {
+
+	componentDidUpdate(){
+		var el = ReactDOM.findDOMNode(this.refs.add);
+		if (el) el.focus();
+	}
+
 	render() {
 		let props = this.props;
 
