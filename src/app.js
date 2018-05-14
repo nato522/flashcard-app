@@ -2,14 +2,16 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { createStore, combineReducers } from 'redux';
 import { Provider } from 'react-redux';
-
+import { Router, Route }  from 'react-router';
+import { createBrowserHistory } from 'history';
+import { syncHistoryWithStore, routerReducer } from 'react-router-redux';
 import * as reducers from './reducers';
-import App from './components/App';
-import Sidebar from './components/Sidebar';
+reducers.routing = routerReducer;
 
-const ENTER_KEY = 13;
+import App from './components/App';
 
 const store = createStore(combineReducers(reducers));
+const history = syncHistoryWithStore(createBrowserHistory(), store);
 
 store.subscribe(() => {
 	console.log(store.getState());
@@ -20,9 +22,9 @@ function run(){
 
 	ReactDOM.render((
 		<Provider store={store}>
-			<App>
-				<Sidebar/>
-			</App>
+			<Router history={history}>
+				<Route path='/' component={App}></Route>
+			</Router>
 		</Provider>
 	), document.getElementById('root'));
 }
