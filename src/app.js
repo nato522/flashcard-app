@@ -2,13 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { createStore, combineReducers } from 'redux';
 import { Provider } from 'react-redux';
-import { Router, Route }  from 'react-router';
+import { Router, Switch, Route }  from 'react-router-dom';
 import { createBrowserHistory } from 'history';
 import { syncHistoryWithStore, routerReducer } from 'react-router-redux';
 import * as reducers from './reducers';
 reducers.routing = routerReducer;
 
 import App from './components/App';
+import VisibleCards from './components/VisibleCards';
 
 const store = createStore(combineReducers(reducers));
 const history = syncHistoryWithStore(createBrowserHistory(), store);
@@ -23,7 +24,11 @@ function run(){
 	ReactDOM.render((
 		<Provider store={store}>
 			<Router history={history}>
-				<Route path='/' component={App}></Route>
+				<Switch>
+					<Route exact path='/' component={App}>
+						<Route path='/deck/:deckId' component={VisibleCards}></Route>
+					</Route>
+				</Switch>
 			</Router>
 		</Provider>
 	), document.getElementById('root'));

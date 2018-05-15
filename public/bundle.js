@@ -668,7 +668,7 @@ var createLocation = exports.createLocation = function createLocation(path, stat
 var locationsAreEqual = exports.locationsAreEqual = function locationsAreEqual(a, b) {
   return a.pathname === b.pathname && a.search === b.search && a.hash === b.hash && a.key === b.key && (0, _valueEqual2.default)(a.state, b.state);
 };
-},{"./PathUtils":17,"resolve-pathname":81,"value-equal":84}],17:[function(require,module,exports){
+},{"./PathUtils":17,"resolve-pathname":94,"value-equal":97}],17:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -1038,7 +1038,7 @@ var createBrowserHistory = function createBrowserHistory() {
 };
 
 exports.default = createBrowserHistory;
-},{"./DOMUtils":15,"./LocationUtils":16,"./PathUtils":17,"./createTransitionManager":21,"invariant":24,"warning":85}],19:[function(require,module,exports){
+},{"./DOMUtils":15,"./LocationUtils":16,"./PathUtils":17,"./createTransitionManager":21,"invariant":24,"warning":98}],19:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -1363,7 +1363,7 @@ var createHashHistory = function createHashHistory() {
 };
 
 exports.default = createHashHistory;
-},{"./DOMUtils":15,"./LocationUtils":16,"./PathUtils":17,"./createTransitionManager":21,"invariant":24,"warning":85}],20:[function(require,module,exports){
+},{"./DOMUtils":15,"./LocationUtils":16,"./PathUtils":17,"./createTransitionManager":21,"invariant":24,"warning":98}],20:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -1534,7 +1534,7 @@ var createMemoryHistory = function createMemoryHistory() {
 };
 
 exports.default = createMemoryHistory;
-},{"./LocationUtils":16,"./PathUtils":17,"./createTransitionManager":21,"warning":85}],21:[function(require,module,exports){
+},{"./LocationUtils":16,"./PathUtils":17,"./createTransitionManager":21,"warning":98}],21:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -1620,7 +1620,7 @@ var createTransitionManager = function createTransitionManager() {
 };
 
 exports.default = createTransitionManager;
-},{"warning":85}],22:[function(require,module,exports){
+},{"warning":98}],22:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -20133,7 +20133,7 @@ module.exports = reactDom;
 }
 
 }).call(this,require('_process'))
-},{"_process":38,"fbjs/lib/ExecutionEnvironment":1,"fbjs/lib/camelizeStyleName":3,"fbjs/lib/containsNode":4,"fbjs/lib/emptyFunction":5,"fbjs/lib/emptyObject":6,"fbjs/lib/getActiveElement":7,"fbjs/lib/hyphenateStyleName":9,"fbjs/lib/invariant":10,"fbjs/lib/shallowEqual":13,"fbjs/lib/warning":14,"object-assign":35,"prop-types/checkPropTypes":39,"react":79}],45:[function(require,module,exports){
+},{"_process":38,"fbjs/lib/ExecutionEnvironment":1,"fbjs/lib/camelizeStyleName":3,"fbjs/lib/containsNode":4,"fbjs/lib/emptyFunction":5,"fbjs/lib/emptyObject":6,"fbjs/lib/getActiveElement":7,"fbjs/lib/hyphenateStyleName":9,"fbjs/lib/invariant":10,"fbjs/lib/shallowEqual":13,"fbjs/lib/warning":14,"object-assign":35,"prop-types/checkPropTypes":39,"react":92}],45:[function(require,module,exports){
 /** @license React v16.3.2
  * react-dom.production.min.js
  *
@@ -20381,7 +20381,7 @@ var Gg={createPortal:Fg,findDOMNode:function(a){return null==a?null:1===a.nodeTy
 null})}),!0):!1},unstable_createPortal:function(){return Fg.apply(void 0,arguments)},unstable_batchedUpdates:X.batchedUpdates,unstable_deferredUpdates:X.deferredUpdates,flushSync:X.flushSync,unstable_flushControlled:X.flushControlled,__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED:{EventPluginHub:Ra,EventPluginRegistry:Ca,EventPropagators:kb,ReactControlledComponent:$b,ReactDOMComponentTree:bb,ReactDOMEventListener:$d},unstable_createRoot:function(a,b){return new tg(a,!0,null!=b&&!0===b.hydrate)}};
 X.injectIntoDevTools({findFiberByHostInstance:Ua,bundleType:0,version:"16.3.2",rendererPackageName:"react-dom"});var Hg=Object.freeze({default:Gg}),Ig=Hg&&Gg||Hg;module.exports=Ig["default"]?Ig["default"]:Ig;
 
-},{"fbjs/lib/ExecutionEnvironment":1,"fbjs/lib/containsNode":4,"fbjs/lib/emptyFunction":5,"fbjs/lib/emptyObject":6,"fbjs/lib/getActiveElement":7,"fbjs/lib/invariant":10,"fbjs/lib/shallowEqual":13,"object-assign":35,"react":79}],46:[function(require,module,exports){
+},{"fbjs/lib/ExecutionEnvironment":1,"fbjs/lib/containsNode":4,"fbjs/lib/emptyFunction":5,"fbjs/lib/emptyObject":6,"fbjs/lib/getActiveElement":7,"fbjs/lib/invariant":10,"fbjs/lib/shallowEqual":13,"object-assign":35,"react":92}],46:[function(require,module,exports){
 (function (process){
 'use strict';
 
@@ -20512,7 +20512,7 @@ function createProvider() {
 
 exports.default = createProvider();
 }).call(this,require('_process'))
-},{"../utils/PropTypes":57,"../utils/warning":61,"_process":38,"prop-types":42,"react":79}],48:[function(require,module,exports){
+},{"../utils/PropTypes":57,"../utils/warning":61,"_process":38,"prop-types":42,"react":92}],48:[function(require,module,exports){
 (function (process){
 'use strict';
 
@@ -20821,7 +20821,7 @@ selectorFactory) {
   };
 }
 }).call(this,require('_process'))
-},{"../utils/PropTypes":57,"../utils/Subscription":58,"_process":38,"hoist-non-react-statics":23,"invariant":24,"react":79}],49:[function(require,module,exports){
+},{"../utils/PropTypes":57,"../utils/Subscription":58,"_process":38,"hoist-non-react-statics":23,"invariant":24,"react":92}],49:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -20979,7 +20979,7 @@ function whenMapDispatchToPropsIsObject(mapDispatchToProps) {
 }
 
 exports.default = [whenMapDispatchToPropsIsFunction, whenMapDispatchToPropsIsMissing, whenMapDispatchToPropsIsObject];
-},{"./wrapMapToProps":55,"redux":80}],51:[function(require,module,exports){
+},{"./wrapMapToProps":55,"redux":93}],51:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -21514,6 +21514,524 @@ function warning(message) {
 },{}],62:[function(require,module,exports){
 'use strict';
 
+exports.__esModule = true;
+
+var _warning = require('warning');
+
+var _warning2 = _interopRequireDefault(_warning);
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = require('prop-types');
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _createBrowserHistory = require('history/createBrowserHistory');
+
+var _createBrowserHistory2 = _interopRequireDefault(_createBrowserHistory);
+
+var _Router = require('./Router');
+
+var _Router2 = _interopRequireDefault(_Router);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+/**
+ * The public API for a <Router> that uses HTML5 history.
+ */
+var BrowserRouter = function (_React$Component) {
+  _inherits(BrowserRouter, _React$Component);
+
+  function BrowserRouter() {
+    var _temp, _this, _ret;
+
+    _classCallCheck(this, BrowserRouter);
+
+    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args))), _this), _this.history = (0, _createBrowserHistory2.default)(_this.props), _temp), _possibleConstructorReturn(_this, _ret);
+  }
+
+  BrowserRouter.prototype.componentWillMount = function componentWillMount() {
+    (0, _warning2.default)(!this.props.history, '<BrowserRouter> ignores the history prop. To use a custom history, ' + 'use `import { Router }` instead of `import { BrowserRouter as Router }`.');
+  };
+
+  BrowserRouter.prototype.render = function render() {
+    return _react2.default.createElement(_Router2.default, { history: this.history, children: this.props.children });
+  };
+
+  return BrowserRouter;
+}(_react2.default.Component);
+
+BrowserRouter.propTypes = {
+  basename: _propTypes2.default.string,
+  forceRefresh: _propTypes2.default.bool,
+  getUserConfirmation: _propTypes2.default.func,
+  keyLength: _propTypes2.default.number,
+  children: _propTypes2.default.node
+};
+exports.default = BrowserRouter;
+},{"./Router":70,"history/createBrowserHistory":18,"prop-types":42,"react":92,"warning":98}],63:[function(require,module,exports){
+'use strict';
+
+exports.__esModule = true;
+
+var _warning = require('warning');
+
+var _warning2 = _interopRequireDefault(_warning);
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = require('prop-types');
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _createHashHistory = require('history/createHashHistory');
+
+var _createHashHistory2 = _interopRequireDefault(_createHashHistory);
+
+var _Router = require('./Router');
+
+var _Router2 = _interopRequireDefault(_Router);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+/**
+ * The public API for a <Router> that uses window.location.hash.
+ */
+var HashRouter = function (_React$Component) {
+  _inherits(HashRouter, _React$Component);
+
+  function HashRouter() {
+    var _temp, _this, _ret;
+
+    _classCallCheck(this, HashRouter);
+
+    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args))), _this), _this.history = (0, _createHashHistory2.default)(_this.props), _temp), _possibleConstructorReturn(_this, _ret);
+  }
+
+  HashRouter.prototype.componentWillMount = function componentWillMount() {
+    (0, _warning2.default)(!this.props.history, '<HashRouter> ignores the history prop. To use a custom history, ' + 'use `import { Router }` instead of `import { HashRouter as Router }`.');
+  };
+
+  HashRouter.prototype.render = function render() {
+    return _react2.default.createElement(_Router2.default, { history: this.history, children: this.props.children });
+  };
+
+  return HashRouter;
+}(_react2.default.Component);
+
+HashRouter.propTypes = {
+  basename: _propTypes2.default.string,
+  getUserConfirmation: _propTypes2.default.func,
+  hashType: _propTypes2.default.oneOf(['hashbang', 'noslash', 'slash']),
+  children: _propTypes2.default.node
+};
+exports.default = HashRouter;
+},{"./Router":70,"history/createHashHistory":19,"prop-types":42,"react":92,"warning":98}],64:[function(require,module,exports){
+'use strict';
+
+exports.__esModule = true;
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = require('prop-types');
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _invariant = require('invariant');
+
+var _invariant2 = _interopRequireDefault(_invariant);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var isModifiedEvent = function isModifiedEvent(event) {
+  return !!(event.metaKey || event.altKey || event.ctrlKey || event.shiftKey);
+};
+
+/**
+ * The public API for rendering a history-aware <a>.
+ */
+
+var Link = function (_React$Component) {
+  _inherits(Link, _React$Component);
+
+  function Link() {
+    var _temp, _this, _ret;
+
+    _classCallCheck(this, Link);
+
+    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args))), _this), _this.handleClick = function (event) {
+      if (_this.props.onClick) _this.props.onClick(event);
+
+      if (!event.defaultPrevented && // onClick prevented default
+      event.button === 0 && // ignore right clicks
+      !_this.props.target && // let browser handle "target=_blank" etc.
+      !isModifiedEvent(event) // ignore clicks with modifier keys
+      ) {
+          event.preventDefault();
+
+          var history = _this.context.router.history;
+          var _this$props = _this.props,
+              replace = _this$props.replace,
+              to = _this$props.to;
+
+
+          if (replace) {
+            history.replace(to);
+          } else {
+            history.push(to);
+          }
+        }
+    }, _temp), _possibleConstructorReturn(_this, _ret);
+  }
+
+  Link.prototype.render = function render() {
+    var _props = this.props,
+        replace = _props.replace,
+        to = _props.to,
+        innerRef = _props.innerRef,
+        props = _objectWithoutProperties(_props, ['replace', 'to', 'innerRef']); // eslint-disable-line no-unused-vars
+
+    (0, _invariant2.default)(this.context.router, 'You should not use <Link> outside a <Router>');
+
+    var href = this.context.router.history.createHref(typeof to === 'string' ? { pathname: to } : to);
+
+    return _react2.default.createElement('a', _extends({}, props, { onClick: this.handleClick, href: href, ref: innerRef }));
+  };
+
+  return Link;
+}(_react2.default.Component);
+
+Link.propTypes = {
+  onClick: _propTypes2.default.func,
+  target: _propTypes2.default.string,
+  replace: _propTypes2.default.bool,
+  to: _propTypes2.default.oneOfType([_propTypes2.default.string, _propTypes2.default.object]).isRequired,
+  innerRef: _propTypes2.default.oneOfType([_propTypes2.default.string, _propTypes2.default.func])
+};
+Link.defaultProps = {
+  replace: false
+};
+Link.contextTypes = {
+  router: _propTypes2.default.shape({
+    history: _propTypes2.default.shape({
+      push: _propTypes2.default.func.isRequired,
+      replace: _propTypes2.default.func.isRequired,
+      createHref: _propTypes2.default.func.isRequired
+    }).isRequired
+  }).isRequired
+};
+exports.default = Link;
+},{"invariant":24,"prop-types":42,"react":92}],65:[function(require,module,exports){
+'use strict';
+
+exports.__esModule = true;
+
+var _MemoryRouter = require('react-router/MemoryRouter');
+
+var _MemoryRouter2 = _interopRequireDefault(_MemoryRouter);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = _MemoryRouter2.default; // Written in this round about way for babel-transform-imports
+},{"react-router/MemoryRouter":81}],66:[function(require,module,exports){
+'use strict';
+
+exports.__esModule = true;
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = require('prop-types');
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _Route = require('./Route');
+
+var _Route2 = _interopRequireDefault(_Route);
+
+var _Link = require('./Link');
+
+var _Link2 = _interopRequireDefault(_Link);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+
+/**
+ * A <Link> wrapper that knows if it's "active" or not.
+ */
+var NavLink = function NavLink(_ref) {
+  var to = _ref.to,
+      exact = _ref.exact,
+      strict = _ref.strict,
+      location = _ref.location,
+      activeClassName = _ref.activeClassName,
+      className = _ref.className,
+      activeStyle = _ref.activeStyle,
+      style = _ref.style,
+      getIsActive = _ref.isActive,
+      ariaCurrent = _ref.ariaCurrent,
+      rest = _objectWithoutProperties(_ref, ['to', 'exact', 'strict', 'location', 'activeClassName', 'className', 'activeStyle', 'style', 'isActive', 'ariaCurrent']);
+
+  return _react2.default.createElement(_Route2.default, {
+    path: (typeof to === 'undefined' ? 'undefined' : _typeof(to)) === 'object' ? to.pathname : to,
+    exact: exact,
+    strict: strict,
+    location: location,
+    children: function children(_ref2) {
+      var location = _ref2.location,
+          match = _ref2.match;
+
+      var isActive = !!(getIsActive ? getIsActive(match, location) : match);
+
+      return _react2.default.createElement(_Link2.default, _extends({
+        to: to,
+        className: isActive ? [className, activeClassName].filter(function (i) {
+          return i;
+        }).join(' ') : className,
+        style: isActive ? _extends({}, style, activeStyle) : style,
+        'aria-current': isActive && ariaCurrent
+      }, rest));
+    }
+  });
+};
+
+NavLink.propTypes = {
+  to: _Link2.default.propTypes.to,
+  exact: _propTypes2.default.bool,
+  strict: _propTypes2.default.bool,
+  location: _propTypes2.default.object,
+  activeClassName: _propTypes2.default.string,
+  className: _propTypes2.default.string,
+  activeStyle: _propTypes2.default.object,
+  style: _propTypes2.default.object,
+  isActive: _propTypes2.default.func,
+  ariaCurrent: _propTypes2.default.oneOf(['page', 'step', 'location', 'true'])
+};
+
+NavLink.defaultProps = {
+  activeClassName: 'active',
+  ariaCurrent: 'true'
+};
+
+exports.default = NavLink;
+},{"./Link":64,"./Route":69,"prop-types":42,"react":92}],67:[function(require,module,exports){
+'use strict';
+
+exports.__esModule = true;
+
+var _Prompt = require('react-router/Prompt');
+
+var _Prompt2 = _interopRequireDefault(_Prompt);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = _Prompt2.default; // Written in this round about way for babel-transform-imports
+},{"react-router/Prompt":82}],68:[function(require,module,exports){
+'use strict';
+
+exports.__esModule = true;
+
+var _Redirect = require('react-router/Redirect');
+
+var _Redirect2 = _interopRequireDefault(_Redirect);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = _Redirect2.default; // Written in this round about way for babel-transform-imports
+},{"react-router/Redirect":83}],69:[function(require,module,exports){
+'use strict';
+
+exports.__esModule = true;
+
+var _Route = require('react-router/Route');
+
+var _Route2 = _interopRequireDefault(_Route);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = _Route2.default; // Written in this round about way for babel-transform-imports
+},{"react-router/Route":84}],70:[function(require,module,exports){
+'use strict';
+
+exports.__esModule = true;
+
+var _Router = require('react-router/Router');
+
+var _Router2 = _interopRequireDefault(_Router);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = _Router2.default; // Written in this round about way for babel-transform-imports
+},{"react-router/Router":85}],71:[function(require,module,exports){
+'use strict';
+
+exports.__esModule = true;
+
+var _StaticRouter = require('react-router/StaticRouter');
+
+var _StaticRouter2 = _interopRequireDefault(_StaticRouter);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = _StaticRouter2.default; // Written in this round about way for babel-transform-imports
+},{"react-router/StaticRouter":86}],72:[function(require,module,exports){
+'use strict';
+
+exports.__esModule = true;
+
+var _Switch = require('react-router/Switch');
+
+var _Switch2 = _interopRequireDefault(_Switch);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = _Switch2.default; // Written in this round about way for babel-transform-imports
+},{"react-router/Switch":87}],73:[function(require,module,exports){
+'use strict';
+
+exports.__esModule = true;
+exports.withRouter = exports.matchPath = exports.Switch = exports.StaticRouter = exports.Router = exports.Route = exports.Redirect = exports.Prompt = exports.NavLink = exports.MemoryRouter = exports.Link = exports.HashRouter = exports.BrowserRouter = undefined;
+
+var _BrowserRouter2 = require('./BrowserRouter');
+
+var _BrowserRouter3 = _interopRequireDefault(_BrowserRouter2);
+
+var _HashRouter2 = require('./HashRouter');
+
+var _HashRouter3 = _interopRequireDefault(_HashRouter2);
+
+var _Link2 = require('./Link');
+
+var _Link3 = _interopRequireDefault(_Link2);
+
+var _MemoryRouter2 = require('./MemoryRouter');
+
+var _MemoryRouter3 = _interopRequireDefault(_MemoryRouter2);
+
+var _NavLink2 = require('./NavLink');
+
+var _NavLink3 = _interopRequireDefault(_NavLink2);
+
+var _Prompt2 = require('./Prompt');
+
+var _Prompt3 = _interopRequireDefault(_Prompt2);
+
+var _Redirect2 = require('./Redirect');
+
+var _Redirect3 = _interopRequireDefault(_Redirect2);
+
+var _Route2 = require('./Route');
+
+var _Route3 = _interopRequireDefault(_Route2);
+
+var _Router2 = require('./Router');
+
+var _Router3 = _interopRequireDefault(_Router2);
+
+var _StaticRouter2 = require('./StaticRouter');
+
+var _StaticRouter3 = _interopRequireDefault(_StaticRouter2);
+
+var _Switch2 = require('./Switch');
+
+var _Switch3 = _interopRequireDefault(_Switch2);
+
+var _matchPath2 = require('./matchPath');
+
+var _matchPath3 = _interopRequireDefault(_matchPath2);
+
+var _withRouter2 = require('./withRouter');
+
+var _withRouter3 = _interopRequireDefault(_withRouter2);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.BrowserRouter = _BrowserRouter3.default;
+exports.HashRouter = _HashRouter3.default;
+exports.Link = _Link3.default;
+exports.MemoryRouter = _MemoryRouter3.default;
+exports.NavLink = _NavLink3.default;
+exports.Prompt = _Prompt3.default;
+exports.Redirect = _Redirect3.default;
+exports.Route = _Route3.default;
+exports.Router = _Router3.default;
+exports.StaticRouter = _StaticRouter3.default;
+exports.Switch = _Switch3.default;
+exports.matchPath = _matchPath3.default;
+exports.withRouter = _withRouter3.default;
+},{"./BrowserRouter":62,"./HashRouter":63,"./Link":64,"./MemoryRouter":65,"./NavLink":66,"./Prompt":67,"./Redirect":68,"./Route":69,"./Router":70,"./StaticRouter":71,"./Switch":72,"./matchPath":74,"./withRouter":75}],74:[function(require,module,exports){
+'use strict';
+
+exports.__esModule = true;
+
+var _matchPath = require('react-router/matchPath');
+
+var _matchPath2 = _interopRequireDefault(_matchPath);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = _matchPath2.default; // Written in this round about way for babel-transform-imports
+},{"react-router/matchPath":88}],75:[function(require,module,exports){
+'use strict';
+
+exports.__esModule = true;
+
+var _withRouter = require('react-router/withRouter');
+
+var _withRouter2 = _interopRequireDefault(_withRouter);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = _withRouter2.default; // Written in this round about way for babel-transform-imports
+},{"react-router/withRouter":89}],76:[function(require,module,exports){
+'use strict';
+
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
@@ -21549,7 +22067,7 @@ var goBack = exports.goBack = updateLocation('goBack');
 var goForward = exports.goForward = updateLocation('goForward');
 
 var routerActions = exports.routerActions = { push: push, replace: replace, go: go, goBack: goBack, goForward: goForward };
-},{}],63:[function(require,module,exports){
+},{}],77:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -21629,7 +22147,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'd
 
 exports.syncHistoryWithStore = _sync2['default'];
 exports.routerMiddleware = _middleware2['default'];
-},{"./actions":62,"./middleware":64,"./reducer":65,"./sync":66}],64:[function(require,module,exports){
+},{"./actions":76,"./middleware":78,"./reducer":79,"./sync":80}],78:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -21663,7 +22181,7 @@ function routerMiddleware(history) {
     };
   };
 }
-},{"./actions":62}],65:[function(require,module,exports){
+},{"./actions":76}],79:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -21702,7 +22220,7 @@ function routerReducer() {
 
   return state;
 }
-},{}],66:[function(require,module,exports){
+},{}],80:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -21858,7 +22376,7 @@ function syncHistoryWithStore(history, store) {
     }
   });
 }
-},{"./reducer":65}],67:[function(require,module,exports){
+},{"./reducer":79}],81:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -21928,7 +22446,7 @@ MemoryRouter.propTypes = {
   children: _propTypes2.default.node
 };
 exports.default = MemoryRouter;
-},{"./Router":71,"history/createMemoryHistory":20,"prop-types":42,"react":79,"warning":85}],68:[function(require,module,exports){
+},{"./Router":85,"history/createMemoryHistory":20,"prop-types":42,"react":92,"warning":98}],82:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -22019,7 +22537,7 @@ Prompt.contextTypes = {
   }).isRequired
 };
 exports.default = Prompt;
-},{"invariant":24,"prop-types":42,"react":79}],69:[function(require,module,exports){
+},{"invariant":24,"prop-types":42,"react":92}],83:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -22128,7 +22646,7 @@ Redirect.contextTypes = {
   }).isRequired
 };
 exports.default = Redirect;
-},{"history":22,"invariant":24,"prop-types":42,"react":79,"warning":85}],70:[function(require,module,exports){
+},{"history":22,"invariant":24,"prop-types":42,"react":92,"warning":98}],84:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -22281,7 +22799,7 @@ Route.childContextTypes = {
   router: _propTypes2.default.object.isRequired
 };
 exports.default = Route;
-},{"./matchPath":75,"invariant":24,"prop-types":42,"react":79,"warning":85}],71:[function(require,module,exports){
+},{"./matchPath":88,"invariant":24,"prop-types":42,"react":92,"warning":98}],85:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -22401,7 +22919,7 @@ Router.childContextTypes = {
   router: _propTypes2.default.object.isRequired
 };
 exports.default = Router;
-},{"invariant":24,"prop-types":42,"react":79,"warning":85}],72:[function(require,module,exports){
+},{"invariant":24,"prop-types":42,"react":92,"warning":98}],86:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -22587,7 +23105,7 @@ StaticRouter.childContextTypes = {
   router: _propTypes2.default.object.isRequired
 };
 exports.default = StaticRouter;
-},{"./Router":71,"history/PathUtils":17,"invariant":24,"prop-types":42,"react":79,"warning":85}],73:[function(require,module,exports){
+},{"./Router":85,"history/PathUtils":17,"invariant":24,"prop-types":42,"react":92,"warning":98}],87:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -22684,60 +23202,7 @@ Switch.propTypes = {
   location: _propTypes2.default.object
 };
 exports.default = Switch;
-},{"./matchPath":75,"invariant":24,"prop-types":42,"react":79,"warning":85}],74:[function(require,module,exports){
-'use strict';
-
-exports.__esModule = true;
-exports.withRouter = exports.matchPath = exports.Switch = exports.StaticRouter = exports.Router = exports.Route = exports.Redirect = exports.Prompt = exports.MemoryRouter = undefined;
-
-var _MemoryRouter2 = require('./MemoryRouter');
-
-var _MemoryRouter3 = _interopRequireDefault(_MemoryRouter2);
-
-var _Prompt2 = require('./Prompt');
-
-var _Prompt3 = _interopRequireDefault(_Prompt2);
-
-var _Redirect2 = require('./Redirect');
-
-var _Redirect3 = _interopRequireDefault(_Redirect2);
-
-var _Route2 = require('./Route');
-
-var _Route3 = _interopRequireDefault(_Route2);
-
-var _Router2 = require('./Router');
-
-var _Router3 = _interopRequireDefault(_Router2);
-
-var _StaticRouter2 = require('./StaticRouter');
-
-var _StaticRouter3 = _interopRequireDefault(_StaticRouter2);
-
-var _Switch2 = require('./Switch');
-
-var _Switch3 = _interopRequireDefault(_Switch2);
-
-var _matchPath2 = require('./matchPath');
-
-var _matchPath3 = _interopRequireDefault(_matchPath2);
-
-var _withRouter2 = require('./withRouter');
-
-var _withRouter3 = _interopRequireDefault(_withRouter2);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.MemoryRouter = _MemoryRouter3.default;
-exports.Prompt = _Prompt3.default;
-exports.Redirect = _Redirect3.default;
-exports.Route = _Route3.default;
-exports.Router = _Router3.default;
-exports.StaticRouter = _StaticRouter3.default;
-exports.Switch = _Switch3.default;
-exports.matchPath = _matchPath3.default;
-exports.withRouter = _withRouter3.default;
-},{"./MemoryRouter":67,"./Prompt":68,"./Redirect":69,"./Route":70,"./Router":71,"./StaticRouter":72,"./Switch":73,"./matchPath":75,"./withRouter":76}],75:[function(require,module,exports){
+},{"./matchPath":88,"invariant":24,"prop-types":42,"react":92,"warning":98}],88:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -22815,7 +23280,7 @@ var matchPath = function matchPath(pathname) {
 };
 
 exports.default = matchPath;
-},{"path-to-regexp":36}],76:[function(require,module,exports){
+},{"path-to-regexp":36}],89:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -22865,7 +23330,7 @@ var withRouter = function withRouter(Component) {
 };
 
 exports.default = withRouter;
-},{"./Route":70,"hoist-non-react-statics":23,"prop-types":42,"react":79}],77:[function(require,module,exports){
+},{"./Route":84,"hoist-non-react-statics":23,"prop-types":42,"react":92}],90:[function(require,module,exports){
 (function (process){
 /** @license React v16.3.2
  * react.development.js
@@ -24283,7 +24748,7 @@ module.exports = react;
 }
 
 }).call(this,require('_process'))
-},{"_process":38,"fbjs/lib/emptyFunction":5,"fbjs/lib/emptyObject":6,"fbjs/lib/invariant":10,"fbjs/lib/warning":14,"object-assign":35,"prop-types/checkPropTypes":39}],78:[function(require,module,exports){
+},{"_process":38,"fbjs/lib/emptyFunction":5,"fbjs/lib/emptyObject":6,"fbjs/lib/invariant":10,"fbjs/lib/warning":14,"object-assign":35,"prop-types/checkPropTypes":39}],91:[function(require,module,exports){
 /** @license React v16.3.2
  * react.production.min.js
  *
@@ -24307,7 +24772,7 @@ _calculateChangedBits:b,_defaultValue:a,_currentValue:a,_changedBits:0,Provider:
 (k=a.type.defaultProps);for(c in b)J.call(b,c)&&!K.hasOwnProperty(c)&&(d[c]=void 0===b[c]&&void 0!==k?k[c]:b[c])}c=arguments.length-2;if(1===c)d.children=e;else if(1<c){k=Array(c);for(var l=0;l<c;l++)k[l]=arguments[l+2];d.children=k}return{$$typeof:t,type:a.type,key:g,ref:h,props:d,_owner:f}},createFactory:function(a){var b=L.bind(null,a);b.type=a;return b},isValidElement:M,version:"16.3.2",__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED:{ReactCurrentOwner:I,assign:m}},X=Object.freeze({default:W}),
 Y=X&&W||X;module.exports=Y["default"]?Y["default"]:Y;
 
-},{"fbjs/lib/emptyFunction":5,"fbjs/lib/emptyObject":6,"fbjs/lib/invariant":10,"object-assign":35}],79:[function(require,module,exports){
+},{"fbjs/lib/emptyFunction":5,"fbjs/lib/emptyObject":6,"fbjs/lib/invariant":10,"object-assign":35}],92:[function(require,module,exports){
 (function (process){
 'use strict';
 
@@ -24318,7 +24783,7 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 }).call(this,require('_process'))
-},{"./cjs/react.development.js":77,"./cjs/react.production.min.js":78,"_process":38}],80:[function(require,module,exports){
+},{"./cjs/react.development.js":90,"./cjs/react.production.min.js":91,"_process":38}],93:[function(require,module,exports){
 (function (process){
 'use strict';
 
@@ -24921,7 +25386,7 @@ exports.compose = compose;
 exports.__DO_NOT_USE__ActionTypes = ActionTypes;
 
 }).call(this,require('_process'))
-},{"_process":38,"symbol-observable":82}],81:[function(require,module,exports){
+},{"_process":38,"symbol-observable":95}],94:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -24996,7 +25461,7 @@ function resolvePathname(to) {
 
 exports.default = resolvePathname;
 module.exports = exports['default'];
-},{}],82:[function(require,module,exports){
+},{}],95:[function(require,module,exports){
 (function (global){
 'use strict';
 
@@ -25028,7 +25493,7 @@ if (typeof self !== 'undefined') {
 var result = (0, _ponyfill2['default'])(root);
 exports['default'] = result;
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"./ponyfill.js":83}],83:[function(require,module,exports){
+},{"./ponyfill.js":96}],96:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -25052,7 +25517,7 @@ function symbolObservablePonyfill(root) {
 
 	return result;
 };
-},{}],84:[function(require,module,exports){
+},{}],97:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -25096,7 +25561,7 @@ function valueEqual(a, b) {
 
 exports.default = valueEqual;
 module.exports = exports['default'];
-},{}],85:[function(require,module,exports){
+},{}],98:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2014-2015, Facebook, Inc.
@@ -25160,7 +25625,7 @@ if (process.env.NODE_ENV !== 'production') {
 module.exports = warning;
 
 }).call(this,require('_process'))
-},{"_process":38}],86:[function(require,module,exports){
+},{"_process":38}],99:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -25176,7 +25641,7 @@ var hideAddDeck = exports.hideAddDeck = function hideAddDeck() {
   return { type: 'HIDE_ADD_DECK' };
 };
 
-},{}],87:[function(require,module,exports){
+},{}],100:[function(require,module,exports){
 'use strict';
 
 var _react = require('react');
@@ -25191,7 +25656,7 @@ var _redux = require('redux');
 
 var _reactRedux = require('react-redux');
 
-var _reactRouter = require('react-router');
+var _reactRouterDom = require('react-router-dom');
 
 var _history = require('history');
 
@@ -25204,6 +25669,10 @@ var reducers = _interopRequireWildcard(_reducers);
 var _App = require('./components/App');
 
 var _App2 = _interopRequireDefault(_App);
+
+var _VisibleCards = require('./components/VisibleCards');
+
+var _VisibleCards2 = _interopRequireDefault(_VisibleCards);
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
@@ -25225,9 +25694,17 @@ function run() {
 		_reactRedux.Provider,
 		{ store: store },
 		_react2.default.createElement(
-			_reactRouter.Router,
+			_reactRouterDom.Router,
 			{ history: history },
-			_react2.default.createElement(_reactRouter.Route, { path: '/', component: _App2.default })
+			_react2.default.createElement(
+				_reactRouterDom.Switch,
+				null,
+				_react2.default.createElement(
+					_reactRouterDom.Route,
+					{ exact: true, path: '/', component: _App2.default },
+					_react2.default.createElement(_reactRouterDom.Route, { path: '/deck/:deckId', component: _VisibleCards2.default })
+				)
+			)
 		)
 	), document.getElementById('root'));
 }
@@ -25246,7 +25723,7 @@ window.add = function () {
 	return store.dispatch(addDeck(new Date().toString()));
 };
 
-},{"./components/App":88,"./reducers":90,"history":22,"react":79,"react-dom":46,"react-redux":56,"react-router":74,"react-router-redux":63,"redux":80}],88:[function(require,module,exports){
+},{"./components/App":101,"./components/VisibleCards":103,"./reducers":104,"history":22,"react":92,"react-dom":46,"react-redux":56,"react-router-dom":73,"react-router-redux":77,"redux":93}],101:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -25263,18 +25740,20 @@ var _Sidebar2 = _interopRequireDefault(_Sidebar);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var App = function App(props) {
+var App = function App(_ref) {
+	var children = _ref.children;
+
 	return _react2.default.createElement(
 		'div',
 		{ className: 'app' },
 		_react2.default.createElement(_Sidebar2.default, null),
-		props.children
+		children
 	);
 };
 
 exports.default = App;
 
-},{"./Sidebar":89,"react":79}],89:[function(require,module,exports){
+},{"./Sidebar":102,"react":92}],102:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -25290,6 +25769,8 @@ var _react2 = _interopRequireDefault(_react);
 var _reactDom = require('react-dom');
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
+
+var _reactRouterDom = require('react-router-dom');
 
 var _reactRedux = require('react-redux');
 
@@ -25380,7 +25861,11 @@ var Sidebar = function (_React$Component) {
 						return _react2.default.createElement(
 							'li',
 							{ key: i },
-							deck.name
+							_react2.default.createElement(
+								_reactRouterDom.Link,
+								{ to: '/deck/' + deck.id },
+								deck.name
+							)
 						);
 					})
 				),
@@ -25404,7 +25889,30 @@ var Sidebar = function (_React$Component) {
 
 exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(Sidebar);
 
-},{"../actions":86,"react":79,"react-dom":46,"react-redux":56}],90:[function(require,module,exports){
+},{"../actions":99,"react":92,"react-dom":46,"react-redux":56,"react-router-dom":73}],103:[function(require,module,exports){
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Cards = function Cards() {
+    return _react2.default.createElement(
+        'h1',
+        null,
+        'Deck will display here'
+    );
+};
+
+exports.default = Cards;
+
+},{"react":92}],104:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -25449,4 +25957,4 @@ var addingDeck = exports.addingDeck = function addingDeck(state, action) {
 	}
 };
 
-},{}]},{},[87]);
+},{}]},{},[100]);

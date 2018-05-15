@@ -1,11 +1,11 @@
 import React from 'react';
 import Sidebar from './Sidebar';
 
-const App = (props) => {
+const App = ({children}) => {
 	return (
 		<div className="app">
-            <Sidebar />
-            {props.children}
+			<Sidebar />
+			{children}
 		</div>
 	);
 };
