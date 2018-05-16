@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Cards = () => {
+const Cards = (deckId) => {
     return(
         <div>
             <h1>Deck will display here</h1>
