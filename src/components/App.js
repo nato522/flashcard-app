@@ -1,11 +1,18 @@
 import React from 'react';
-import Sidebar from './Sidebar';
+import { Router, Route }  from 'react-router-dom';
 
-const App = ({children}) => {
+import Sidebar from './Sidebar';
+import VisibleCards from './VisibleCards';
+
+// const mapStateToProps = (props, { params: { deckId} } ) => ({
+// 	deckId
+// });
+
+const App = () => {
 	return (
 		<div className="app">
 			<Sidebar />
-			{children}
+			<Route path='/deck/:deckId' component={VisibleCards}/>
 		</div>
 	);
 };

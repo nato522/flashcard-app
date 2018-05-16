@@ -25694,16 +25694,12 @@ function run() {
 		_reactRedux.Provider,
 		{ store: store },
 		_react2.default.createElement(
-			_reactRouterDom.Router,
+			_reactRouterDom.BrowserRouter,
 			{ history: history },
 			_react2.default.createElement(
 				_reactRouterDom.Switch,
 				null,
-				_react2.default.createElement(
-					_reactRouterDom.Route,
-					{ exact: true, path: '/', component: _App2.default },
-					_react2.default.createElement(_reactRouterDom.Route, { path: '/deck/:deckId', component: _VisibleCards2.default })
-				)
+				_react2.default.createElement(_reactRouterDom.Route, { path: '/', component: _App2.default })
 			)
 		)
 	), document.getElementById('root'));
@@ -25734,26 +25730,34 @@ var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
+var _reactRouterDom = require('react-router-dom');
+
 var _Sidebar = require('./Sidebar');
 
 var _Sidebar2 = _interopRequireDefault(_Sidebar);
 
+var _VisibleCards = require('./VisibleCards');
+
+var _VisibleCards2 = _interopRequireDefault(_VisibleCards);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var App = function App(_ref) {
-	var children = _ref.children;
+// const mapStateToProps = (props, { params: { deckId} } ) => ({
+// 	deckId
+// });
 
+var App = function App() {
 	return _react2.default.createElement(
 		'div',
 		{ className: 'app' },
 		_react2.default.createElement(_Sidebar2.default, null),
-		children
+		_react2.default.createElement(_reactRouterDom.Route, { path: '/deck/:deckId', component: _VisibleCards2.default })
 	);
 };
 
 exports.default = App;
 
-},{"./Sidebar":102,"react":92}],102:[function(require,module,exports){
+},{"./Sidebar":102,"./VisibleCards":103,"react":92,"react-router-dom":73}],102:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -25904,9 +25908,13 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var Cards = function Cards() {
     return _react2.default.createElement(
-        'h1',
+        'div',
         null,
-        'Deck will display here'
+        _react2.default.createElement(
+            'h1',
+            null,
+            'Deck will display here'
+        )
     );
 };
 
